@@ -1,126 +1,68 @@
 package co.edu.cesde.nayla.models;
 
-public abstract class Persons {
+public class Persons {
+    long userId;
+            String code;
+            String documentNumber;
+            String firstName;
 
-    protected String DocumentType;
-    protected Long userId;
-    protected String code;
-    protected String documentNumber;
-    protected String firstName;
-    protected String lastName;
-    protected String email;
-    protected Boolean status;
-    protected  Long birthDate;
-    protected Boolean StudentId;
-    protected Long StudentI;
-
-    public Boolean getStudentId() {
-        return StudentId;
-    }
-
-    public void setStudentId(Boolean studentId) {
-        StudentId = studentId;
-    }
-
-    public Long getBirthDate() {
-        return birthDate;
-
-    }
-
-    public void setBirthDate(Long birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    protected Persons() {
-    }
-
-    public String getDocumentType() {
-        return DocumentType;
-    }
-
-    public void setDocumentType(Long documentType) {
-        DocumentType = String.valueOf(documentType);
-    }
-
-    public Persons(Long userId, String code, String documentNumber, String firstName, String lastName, String email, Boolean status) {
-        this.userId = userId;
-        this.code = code;
-        this.documentNumber = documentNumber;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.status = status;
-    }
-
-    public Long getUserId() {
+    public long getUserId() {
         return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getCode() {
         return code;
     }
 
-    public String getDocumentNumber() {
-        return documentNumber;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getDocumentNumber() {
+        return documentNumber;
     }
 
     public void setDocumentNumber(String documentNumber) {
         this.documentNumber = documentNumber;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public Boolean getStatus() {
+        return status;
     }
 
     public void setStatus(Boolean status) {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "userId=" + userId +
-                ", code='" + code + '\'' +
-                ", documentNumber='" + documentNumber + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", status=" + status +
-                '}';
-    }
+    String lastName;
+            Boolean status;
 
-    public void SetFirstName(String maria) {
+    public Persons(long userId, String code, String documentNumber, String firstName, String lastName, Boolean status) {
+        this.userId = userId;
+        this.code = code;
+        this.documentNumber = documentNumber;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.status = status;
     }
 }
