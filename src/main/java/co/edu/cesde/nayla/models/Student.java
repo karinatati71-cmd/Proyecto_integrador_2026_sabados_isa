@@ -2,77 +2,55 @@ package co.edu.cesde.nayla.models;
 
 import javax.xml.crypto.dom.DOMCryptoContext;
 
-public class Student extends Persons {
+public class Teacher extends Person {
 
-    private Long studentId;
-    private String birthDate;
+    private Long teacherId;
 
-    public Student() {
+    public Teacher() {
         super();
     }
 
-    public Student(Long userId, String documentType, String documentNumber, String firstName, String lastName, String status, String birthDate) {
+    public Teacher(Long teacherId, Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
         super(userId, documentType, documentNumber, firstName, lastName, status);
-        this.birthDate = birthDate;
+        this.teacherId = teacherId;
     }
 
-    public Long getStudentId() {
-        return studentId;
+    public Long getTeacherId() {
+        return teacherId;
     }
 
-    public void setStudentId(Long studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getbirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    public void setTeacherId(Long teacherId) {
+        this.teacherId = teacherId;
     }
 
     @Override
     public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
+        return "Teacher{" +
+                "teacherId=" + teacherId +
                 ", userId=" + getUserId() +
                 ", documentType='" + getDocumentType() + '\'' +
                 ", documentNumber='" + getDocumentNumber() + '\'' +
                 ", firstName='" + getFirstName() + '\'' +
                 ", lastName='" + getLastName() + '\'' +
-                ", birthDate='" + birthDate + '\'' +
                 ", status='" + getStatus() + '\'' +
                 '}';
     }
-}
-    public Long getStudentId() {
-        return studentId;
+
+    private String getUserId() {
     }
 
-    public void setStudentId(Long StudentId) {
-        this.StudentI= studentId;
+    private String getLastName() {
     }
 
-    public String getBirthDate() {
-        return birthDate;
+    private String getFirstName() {
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    private String getDocumentNumber() {
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
-                ", userId=" + getUserId() +
-                ", documentType='" + getDocumentType() + '\'' +
-                ", documentNumber='" + getDocumentNumber() + '\'' +
-                ", firstName='" + getFirstName() + '\'' +
-                ", lastName='" + getLastName() + '\'' +
-                ", birthDate='" + birthDate + '\'' +
-                ", status='" + getStatus() + '\'' +
-                '}';
+    private String getDocumentType() {
+    }
+
+    public void SetFirstName(String carlos) {
     }
 }
