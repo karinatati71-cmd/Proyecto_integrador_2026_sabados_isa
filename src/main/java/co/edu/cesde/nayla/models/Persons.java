@@ -31,7 +31,7 @@ public abstract class Persons {
         this.birthDate = birthDate;
     }
 
-    protected Persons() {
+    protected Persons(Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
     }
 
     public String getDocumentType() {
@@ -121,5 +121,6 @@ public abstract class Persons {
                 '}';
     }
 
-    public void SetFirstName(String maria) {
-    }
+    public void SetFirstName(String maria){
+    };
+}

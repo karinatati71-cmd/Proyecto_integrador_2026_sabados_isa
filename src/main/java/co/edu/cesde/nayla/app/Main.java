@@ -9,7 +9,8 @@ import co.edu.cesde.nayla.models.Persons;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        Persons person = new person() ;
+        Persons person;
+        person = new person();
         Persons person2 = new person();
         Persons person3 = new person();
 
@@ -18,7 +19,7 @@ public class Main {
         person2.setFirstName("Rosa");
         person2.getFirstName();
         person3.setFirstName("Sara");
-        person3.getFirstName();
+
 
 
         Persons person4 = new Persons(1L, "001", "123456789", "Sofia", "Torro", "hernandez@gmail.com", true) {

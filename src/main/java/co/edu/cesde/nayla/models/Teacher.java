@@ -1,13 +1,11 @@
 package co.edu.cesde.nayla.models;
 
-import javax.xml.crypto.dom.DOMCryptoContext;
-
-public class Teacher extends Person {
+public class Teacher extends Persons {
 
     private Long teacherId;
 
     public Teacher() {
-        super();
+        super(userId, documentType, documentNumber, firstName, lastName, status);
     }
 
     public Teacher(Long teacherId, Long userId, String documentType, String documentNumber, String firstName, String lastName, String status) {
